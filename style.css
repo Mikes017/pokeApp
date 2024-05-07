@@ -1,6 +1,22 @@
 .arena{
+    display:flex;
     height: 300px;
     background-image: url('./fondo.png');
     background-repeat: no-repeat;
     background-size: contain;
+}
+#poke{
+    height: 165px;
+    position:fixed;
+    top:246px;
+    left: 100px;
+}
+#poke2{
+  
+
+    height: 190px;
+    position:fixed;
+    top:146px;
+    left: 300px;
+
 }
