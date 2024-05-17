@@ -1,22 +1,133 @@
-.arena{
-    display:flex;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.container {
+    position: relative; 
+    display: grid;
+    grid-template-columns: auto 1fr auto; 
+    grid-gap: 20px;
+    align-items: center; 
+}
+
+.arena {
+    grid-column: 2; 
     height: 300px;
+    width: 530px;
     background-image: url('./fondo.png');
     background-repeat: no-repeat;
     background-size: contain;
+    border: 2px solid #ccc;
+    border-radius: 15px;
 }
-#poke{
-    height: 165px;
-    position:fixed;
-    top:246px;
-    left: 100px;
+
+#poke-rival {
+    position: absolute;
+    right: 0; 
+    top: 0; 
 }
-#poke2{
-  
 
-    height: 190px;
-    position:fixed;
-    top:146px;
-    left: 300px;
+#poke-propio {
+    position: absolute;
+    left: 0; 
+    top: 0; 
+}
 
+.controls {
+    position: absolute;
+    left: 0; 
+    bottom: 0; 
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.arena {
+    position: relative; 
+    height: 300px;
+    width: 530px;
+    background-image: url('./fondo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 20px auto;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+}
+
+
+#poke {
+    position: absolute;
+    left: 23%;
+    bottom: 45px;
+    height: 400;
+    width: 400;
+    max-height: 600px; 
+}
+
+#poke2 {
+    position: absolute;
+    right: 20%;
+    bottom: 130px; 
+    max-height: 2000px;
+}
+
+
+
+.stats {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 15px;
+    margin: 10px;
+    width: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.poke-name {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.poke-type, .poke-attack, .poke-hp {
+    font-size: 1.2em;
+}
+
+.controls {
+    margin: 20px 0;
+}
+
+.controls input, .controls button {
+    padding: 10px;
+    font-size: 1em;
+    margin: 5px;
+}
+
+.credits {
+    margin-top: 30px;
+}
+
+.nuevo-rival {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+}
+
+
+
+.credits ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.credits li {
+    font-size: 1em;
+    color: #555;
 }
