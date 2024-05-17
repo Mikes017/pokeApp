@@ -29,44 +29,44 @@ const primeraMayuscula = (cadena) => {
 const asignarColorFondoTipo = (tipo) => {
     switch (tipo) {
         case 'normal':
-            return '#A8A77A'; // Color tipo normal
+            return '#A8A77A'; 
         case 'fire':
-            return '#EE8130'; // Color tipo fuego
+            return '#EE8130'; 
         case 'water':
-            return '#6390F0'; // Color tipo agua
+            return '#6390F0'; 
         case 'electric':
-            return '#F7D02C'; // Color tipo eléctrico
+            return '#F7D02C'; 
         case 'grass':
-            return '#7AC74C'; // Color tipo planta
+            return '#7AC74C'; 
         case 'ice':
-            return '#96D9D6'; // Color tipo hielo
+            return '#96D9D6'; 
         case 'fighting':
-            return '#C22E28'; // Color tipo lucha
+            return '#C22E28'; 
         case 'poison':
-            return '#A33EA1'; // Color tipo veneno
+            return '#A33EA1'; 
         case 'ground':
-            return '#E2BF65'; // Color tipo tierra
+            return '#E2BF65'; 
         case 'flying':
-            return '#A98FF3'; // Color tipo volador
+            return '#A98FF3'; 
         case 'psychic':
-            return '#F95587'; // Color tipo psíquico
+            return '#F95587'; 
         case 'bug':
-            return '#A6B91A'; // Color tipo bicho
+            return '#A6B91A'; 
         case 'rock':
-            return '#B6A136'; // Color tipo roca
+            return '#B6A136'; 
         case 'ghost':
-            return '#735797'; // Color tipo fantasma
+            return '#735797';
         case 'dragon':
-            return '#6F35FC'; // Color tipo dragón
+            return '#6F35FC';
         case 'dark':
-            return '#705746'; // Color tipo siniestro
+            return '#705746';
         case 'steel':
-            return '#B7B7CE'; // Color tipo acero
+            return '#B7B7CE'; 
         case 'fairy':
-            return '#D685AD'; // Color tipo hada
-        // Agrega más casos según los tipos que quieras manejar
+            return '#D685AD'; 
+        
         default:
-            return 'black'; // Color por defecto
+            return 'black'; 
     }
 }
 
@@ -116,7 +116,7 @@ const combate = () => {
     let mensajeAtaque = '';
     let mensajeResultado = '';
 
-    // Verifica si el tipo propio es ventajoso contra el tipo rival
+    
     if (ventajasTipo[tipoPropio] && ventajasTipo[tipoPropio].includes(tipoRival)) {
         nuevoHpRival -= ataquePropio * 2; // Doble de daño
         mensajeAtaque = `${namePoke.textContent} ataca y hace ${ataquePropio * 2} de daño efectivo contra ${namePoke2.textContent}!\n`;
@@ -125,7 +125,7 @@ const combate = () => {
         mensajeAtaque = `${namePoke.textContent} ataca y hace ${ataquePropio} de daño contra ${namePoke2.textContent}.\n`;
     }
 
-    // Verifica si el tipo rival es ventajoso contra el tipo propio
+    
     if (nuevoHpRival <= 0) {
         mensajeResultado = `${namePoke.textContent} debilita a ${namePoke2.textContent}!\n`;
     } else {
@@ -191,5 +191,5 @@ const obtenerNuevoRival = () => {
 nuevoRivalButton.addEventListener('click', obtenerNuevoRival);
 
 window.addEventListener('load', obtenerPokeRival);
-btonElegir.addEventListener('click', obtenerPokePropio); // Agrega esta línea para asignar el evento de click al botón de elegir Pokémon
+btonElegir.addEventListener('click', obtenerPokePropio);
 btonAtaque.addEventListener('click', combate);

@@ -5,15 +5,15 @@ body {
 }
 
 .container {
-    position: relative; /* Establece el contenedor como contexto de posicionamiento para los elementos absolutamente posicionados */
-    display: grid; /* Utiliza un diseño de rejilla para organizar los elementos */
-    grid-template-columns: auto 1fr auto; /* Divide el contenedor en tres columnas: izquierda para el cuadro del aliado, centro para la arena y derecha para el cuadro del enemigo */
-    grid-gap: 20px; /* Espacio entre las columnas */
-    align-items: center; /* Centra verticalmente los elementos */
+    position: relative; 
+    display: grid;
+    grid-template-columns: auto 1fr auto; 
+    grid-gap: 20px;
+    align-items: center; 
 }
 
 .arena {
-    grid-column: 2; /* Coloca la arena en la segunda columna */
+    grid-column: 2; 
     height: 300px;
     width: 530px;
     background-image: url('./fondo.png');
@@ -25,20 +25,20 @@ body {
 
 #poke-rival {
     position: absolute;
-    right: 0; /* Alinea el cuadro de datos del enemigo a la derecha */
-    top: 0; /* Alinea el cuadro de datos del enemigo arriba */
+    right: 0; 
+    top: 0; 
 }
 
 #poke-propio {
     position: absolute;
-    left: 0; /* Alinea el cuadro de datos del aliado a la izquierda */
-    top: 0; /* Alinea el cuadro de datos del aliado arriba */
+    left: 0; 
+    top: 0; 
 }
 
 .controls {
     position: absolute;
-    left: 0; /* Alinea las opciones a la izquierda */
-    bottom: 0; /* Alinea las opciones abajo */
+    left: 0; 
+    bottom: 0; 
 }
 
 
@@ -67,14 +67,14 @@ body {
     bottom: 45px;
     height: 400;
     width: 400;
-    max-height: 600px; /* Ajusta según sea necesario para hacer que el Pokémon se vea más grande */
+    max-height: 600px; 
 }
 
 #poke2 {
     position: absolute;
     right: 20%;
     bottom: 130px; 
-    max-height: 2000px; /* Ajusta según sea necesario para hacer que el Pokémon se vea más grande */
+    max-height: 2000px;
 }
 
 
