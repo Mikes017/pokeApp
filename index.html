@@ -3,53 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio JS</title>
+    <title>Simulador de Pokémon</title>
     <link rel="stylesheet" href="./style.css">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 <body>
-    
-    <div class="stats" id="poke-rival">
-        <h3 id="nombrePoke-rival"></h3>
-        <p id="tipoRival"></p>
-        <p>Ataque: <span id="ataqueRival"></span></p>
-    </div>
+    <div class="container">
+        <div class="stats" id="poke-rival">
+            <h3 id="nombrePoke-rival" class="poke-name"></h3>
+            <p id="tipoRival" class="poke-type"></p>
+            <p>Ataque: <span id="ataqueRival" class="poke-attack"></span></p>
+            <p>HP: <span id="hpRival" class="poke-hp"></span></p>
+        </div>
 
-    <div class="arena">
-        <img id="poke2" src="" alt="">
-        <img id="poke" src="" alt="">
-    </div>
+        <div class="arena">
+            <img id="poke2" class="poke-image" src="" alt="Imagen del Pokémon rival">
+            <img id="poke" class="poke-image" src="" alt="">
+        </div>
 
-    <div class="stats" id="poke-propio">
-        <h3 id="nombrePoke-propio"></h3>
-        <p id="tipoPropio"></p>
-        <p>Ataque: <span id="ataquePropio"></span></p>
-    </div>
+        <div class="stats" id="poke-propio">
+            <h3 id="nombrePoke-propio" class="poke-name"></h3>
+            <p id="tipoPropio" class="poke-type"></p>
+            <p>Ataque: <span id="ataquePropio" class="poke-attack"></span></p>
+            <p>HP: <span id="hpPropio" class="poke-hp"></span></p>
+        </div>
 
-    <div>
-        <input id="input" max="999" min="1" type="text">
-        <button id="botonPoke">  Elegir pokemon</button>
-        <button id="combate" >Ataque</button>
-    </div>
+        <div class="controls">
+            <input id="input" max="999" min="1" type="number" placeholder="Ingresa el número de Pokémon">
+            <button id="botonPoke">Elegir Pokémon</button>
+            <button id="combate">Atacar</button>
+        </div>
 
+        <button id="nuevoRival" class="nuevo-rival">Nuevo Rival</button>
+
+
+        <div id="resultadoCombate"></div>
+        <div class="credits">
+            <ul>
+                <li>Miguel Angel Garcia Rangel</li>
+                <li>Michelle Paola Gonzalez Martinez</li>
+                <li>Jose Julian Perez Bustamante</li>
+                <li>Juan Pablo Vera Morales</li>
+            </ul>
+        </div>
+    </div>
     <script src="./app.js"></script>
-    <div>
-         <ul>
-            <li>
-                Miguel Angel Garcia Rangel
-            </li>
-            <li>
-                Michelle Paola Gonzalez Martinez
-            </li>
-            <li>
-                Jose Julian Perez Bustamante
-            </li>
-            
-            <li>
-                Juan Pablo Vera Morales
-            </li>
-         </ul>
-    </div>
 </body>
 </html>
-
